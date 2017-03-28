@@ -6,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.util.Random;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class MyMouseAdapter extends MouseAdapter {
 	private Random generator = new Random();
@@ -137,6 +138,8 @@ public class MyMouseAdapter extends MouseAdapter {
 
 
 								myPanel.repaint();
+								JFrame frame = new JFrame();
+								JOptionPane.showMessageDialog(frame, "GAME OVER!!");
 								System.out.println("GAME OVER!!");
 								//							}else{
 								//								if(myPanel.colorArray[myPanel.mouseDownGridX][myPanel.mouseDownGridY].equals(Color.RED)){
